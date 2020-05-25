@@ -99,6 +99,7 @@
 		6BE00A86247BA2440049004D /* FaceiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6BE00AB7247BA2D30049004D /* Thread */,
 				6BE00A87247BA2440049004D /* AppDelegate.swift */,
 				6BE00A89247BA2440049004D /* SceneDelegate.swift */,
 				6BE00A8B247BA2440049004D /* ViewController.swift */,
@@ -126,6 +127,13 @@
 				6BE00AAB247BA2460049004D /* Info.plist */,
 			);
 			path = FaceiOSUITests;
+			sourceTree = "<group>";
+		};
+		6BE00AB7247BA2D30049004D /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
