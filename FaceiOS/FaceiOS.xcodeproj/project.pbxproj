@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17C61F638E19A39AABE90F2C /* Pods_FaceiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E72B76BB0F2FBE719D40EB /* Pods_FaceiOSTests.framework */; };
 		491E4C1A98CB3575CB8CE194 /* Pods_FaceiOS_FaceiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0950B15A2533D181A16F02 /* Pods_FaceiOS_FaceiOSUITests.framework */; };
+		6B6D5642247F95FE00CF1A44 /* OperationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D5641247F95FE00CF1A44 /* OperationDemo.swift */; };
 		6BE00A88247BA2440049004D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE00A87247BA2440049004D /* AppDelegate.swift */; };
 		6BE00A8A247BA2440049004D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE00A89247BA2440049004D /* SceneDelegate.swift */; };
 		6BE00A8C247BA2440049004D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE00A8B247BA2440049004D /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		0F0950B15A2533D181A16F02 /* Pods_FaceiOS_FaceiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceiOS_FaceiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DD8F89965D5591DFC41F3D /* Pods-FaceiOS-FaceiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceiOS-FaceiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-FaceiOS-FaceiOSUITests/Pods-FaceiOS-FaceiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		68E2CF1627430BCA78BDEF0C /* Pods-FaceiOS-FaceiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceiOS-FaceiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-FaceiOS-FaceiOSUITests/Pods-FaceiOS-FaceiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B6D5641247F95FE00CF1A44 /* OperationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationDemo.swift; sourceTree = "<group>"; };
 		6BE00A84247BA2440049004D /* FaceiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE00A87247BA2440049004D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BE00A89247BA2440049004D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				781DBB8C0DC0C7E2C4E5D040 /* Pods-FaceiOSTests.debug.xcconfig */,
 				EB98CD910411BCFC7D16A25B /* Pods-FaceiOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -173,6 +174,7 @@
 		6BE00AB7247BA2D30049004D /* Thread */ = {
 			isa = PBXGroup;
 			children = (
+				6B6D5641247F95FE00CF1A44 /* OperationDemo.swift */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -380,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6D5642247F95FE00CF1A44 /* OperationDemo.swift in Sources */,
 				6BE00A8C247BA2440049004D /* ViewController.swift in Sources */,
 				6BE00A88247BA2440049004D /* AppDelegate.swift in Sources */,
 				6BE00A8A247BA2440049004D /* SceneDelegate.swift in Sources */,
@@ -556,15 +559,17 @@
 			baseConfigurationReference = A88AC1F936C9FDDE87BA1DB9 /* Pods-FaceiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9BEVZGB29V;
+				DEVELOPMENT_TEAM = T5639DU29C;
 				INFOPLIST_FILE = FaceiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wjs.FaceiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = wjs.FaceiOS.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -575,15 +580,17 @@
 			baseConfigurationReference = FD6DB8412005C1018B861CFA /* Pods-FaceiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9BEVZGB29V;
+				DEVELOPMENT_TEAM = T5639DU29C;
 				INFOPLIST_FILE = FaceiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wjs.FaceiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = wjs.FaceiOS.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
